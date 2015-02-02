@@ -1,0 +1,26 @@
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Uplogix
+tagline:             'Development Weblog'
+description:         'Code discoveries and open sourced tools from <a href="http://uplogix.com">Uplogix</a>.'
+url:                 http://uplogix.github.io
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Uplogix
+  url:               https://twitter.com/uplogix
+  email:             info@uplogix.com
+
+# Custom vars
+version:             1.0.0
