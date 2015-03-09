@@ -1,4 +1,4 @@
-I'm currently working on a new form based wizard to make configuring our project easier. To that end I've created a new form bean and delegated to the existing form beans. I'm including jsp snippets in my new wiazard page.
+I'm currently working on a new form based wizard to make configuring our software a snap. It's reusing a lot of existing code, and so I've created a new form bean and delegated to the existing form beans. 
 
     public class NewDelegatingForm {
 
@@ -14,7 +14,7 @@ I'm currently working on a new form based wizard to make configuring our project
       }
     }
 
-The problem is that jsps use reflection to set fields. What happens if someone adds a field to OldForm and doesn't update NewDelegatingForm? Runtime Java errors.
+I'm then including existing jsp snippets in my new wizard page. The problem is that jsps use reflection to set fields. What happens if someone adds a field to OldForm and doesn't update NewDelegatingForm? Runtime Java errors.
 
 You could make OldForm and OtherOldForm implement interfaces that NewDelegatingForm also impliments. But that still doesn't address the issue that a modification to OldForm will need to update the interface for IOldForm. A simple thing to forget.
 
