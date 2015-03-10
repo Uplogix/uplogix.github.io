@@ -32,7 +32,14 @@ And the code for the task:
 
 
         import java.lang.reflect.Field;
+        import java.lang.reflect.Method;
+        import java.lang.reflect.Modifier;
+        import java.util.HashSet;
+        import java.util.Set;
 
+        import org.apache.tools.ant.BuildException;
+        import org.apache.tools.ant.Project;
+        import org.apache.tools.ant.Task;
 
         public class VerifyDelegationTask extends Task {
 
